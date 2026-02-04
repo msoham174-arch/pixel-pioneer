@@ -1,0 +1,188 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Body */
+
+body {
+    background: black;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background: #222;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Center Links */
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+
+/* Button */
+
+.nav-btn {
+    padding: 8px 18px;
+    background: #ff6600;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #e65c00;
+}
+
+
+/* Section Text */
+
+.section-text {
+    text-align: left;
+    padding: 200px 0px;
+    color: white;
+    font-size: 50px;
+}
+
+
+/* Button Group */
+
+.btn-group {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    /* Center buttons */
+    gap: 20px;
+    /* Space between buttons */
+}
+
+
+/* Main Button */
+
+.section-btn {
+    padding: 8px 16px;
+    font-size: 18px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+
+/* Hover Effect */
+
+.section-btn:hover {
+    background: #e65c00;
+    transform: scale(1.05);
+}
+
+
+/* Second Button Style */
+
+.section-btn.outline {
+    background: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+}
+
+.section-btn.outline:hover {
+    background: #ff6600;
+    color: white;
+}
+
+
+/* Space */
+
+.space {
+    height: 50px;
+}
+
+
+/* Two Section Layout */
+
+.two-section {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+
+/* Left & Right */
+
+.left .right {
+    width: 50%;
+}
+
+
+/* Video */
+
+.left video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Right Text */
+
+.right h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.right p {
+    line-height: 1.6;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .two-section {
+        flex-direction: column;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+    .nav-links {
+        display: none;
+        /* Hide menu on mobile (optional) */
+    }
+}

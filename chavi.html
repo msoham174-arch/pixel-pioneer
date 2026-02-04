@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: black;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #222;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #ff6600;
+        }
+
+        .nav-btn {
+            padding: 8px 18px;
+            background: #ff6600;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background: #e65c00;
+        }
+
+        /* Section Text */
+        .section-text {
+            text-align: center;
+            padding: 120px 20px;
+            color: white;
+        }
+
+        .section-text h1 {
+            font-size: 40px;
+            margin-top: 15px;
+        }
+
+        .section-text h5 {
+            font-size: 16px;
+            color: #ff6600;
+        }
+
+        /* Button Group */
+        .btn-group {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .section-btn:hover {
+            background: #e65c00;
+            transform: scale(1.05);
+        }
+
+        .section-btn.outline {
+            background: transparent;
+            color: #ff6600;
+            border: 2px solid #ff6600;
+        }
+
+        .section-btn.outline:hover {
+            background: #ff6600;
+            color: white;
+        }
+
+        .space {
+            height: 50px;
+        }
+
+        /* Two Section Layout */
+        .two-section {
+            display: flex;
+            padding: 40px;
+            gap: 30px;
+            color: white;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+        }
+
+        .left video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .right h2 {
+            margin-bottom: 15px;
+        }
+
+        .right p {
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .two-section {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Phenomenon</div>
+
+        <div class="nav-links">
+            <a href="#">Services</a>
+            <a href="#">Industries</a>
+            <a href="#">Company</a>
+            <a href="#">Insight</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <button class="nav-btn">Get in Touch</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-text">
+        <h5>Power Design and Development Agencies</h5>
+        <h1>Empowering Startup To Launch, Scale And Succeed Faster</h1>
+
+        <div class="btn-group">
+            <button class="section-btn">Get Started</button>
+            <button class="section-btn outline">Learn More</button>
+        </div>
+    </section>
+
+    <div class="space"></div>
+
+    <!-- Two Column Section -->
+    <section class="two-section">
+        <div class="left">
+            <video controls>
+                <source src="top-page-video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+
+        <div class="right">
+            <h2>About This Video</h2>
+            <p>
+                This section contains information about the video.
+                You can write anything here to explain your content.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
